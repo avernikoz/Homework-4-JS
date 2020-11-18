@@ -1,4 +1,9 @@
 function discri (a, b, c) {
+  if (  Number.isNaN(a) || a === null || 
+        Number.isNaN(b) || b === null ||
+        Number.isNaN(c) || c === null    ){
+    console.log (`Введите число`);
+  } else {
   let Dis = (b ** 2) - (4 * a * c);
     console.log (`Дискриминант =`,Dis);
   if ( Dis > 0 ) {
@@ -16,8 +21,9 @@ function discri (a, b, c) {
   } else if ( Dis < 0 ) {
       return console.log (`D < 0, нет корней`);
   }
+}
 } 
-console.log (discri(9,-6, 2 ));
+console.log (discri( 23, 23, 49));
 
 
 
